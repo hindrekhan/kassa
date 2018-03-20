@@ -18,6 +18,11 @@ namespace Kassa
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    //Looge kassarakendus kasutades WPF raamistikku.
+
+    //Müüja saab lisada ise tooteid.Tootel peab olema nimetus, hind ja kogus.
+    //Müüja saab lisada olemasolevaid tooteid ostukorvi mille alusel arvutatakse välja summa mida klient maksma peab.
     public partial class MainWindow : Window
     {
         public MainWindow()
