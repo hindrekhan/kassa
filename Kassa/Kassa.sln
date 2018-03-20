@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kassa", "Kassa\Kassa.csproj", "{971C0B34-5B97-471C-A0F9-490FC0B5227B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{971C0B34-5B97-471C-A0F9-490FC0B5227B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971C0B34-5B97-471C-A0F9-490FC0B5227B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971C0B34-5B97-471C-A0F9-490FC0B5227B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971C0B34-5B97-471C-A0F9-490FC0B5227B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {960B1C92-D2C1-48D1-A87A-2B2B74FA5A32}
+	EndGlobalSection
+EndGlobal
