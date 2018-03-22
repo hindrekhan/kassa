@@ -30,7 +30,7 @@
         <Button Name="addProduct" Content="Add Product" HorizontalAlignment="Left" Margin="402,14,0,0" VerticalAlignment="Top" Width="73" Click="addProduct_Click" Height="23"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="114,0,0,0" VerticalAlignment="Top" Height="24"/>
-        <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="Button_Click"/>
+        <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
         <ListBox HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -47,7 +47,7 @@
         </ListBox>
         <Label Content="Basket items" HorizontalAlignment="Center" Margin="358,73,82,0" VerticalAlignment="Top" Width="79"/>
         <Label Content="PRICE:" HorizontalAlignment="Left" Margin="203,272,0,0" VerticalAlignment="Top"/>
-        <Label Content="{Binding Price}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <Label Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
         <TextBox Name="addQuantity" HorizontalAlignment="Left" Height="26" Margin="277,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30"/>
         <Label Content="Quantity to add:" HorizontalAlignment="Left" Margin="184,147,0,0" VerticalAlignment="Top" Width="98"/>
     </Grid>
