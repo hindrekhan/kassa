@@ -26,7 +26,6 @@ namespace Kassa
     public partial class MainWindow : Window
     {
         List<Product> ExistingProducts = new List<Product>();
-        List<Product> AddedProducts = new List<Product>();
         List<Product> SelectedProducts = new List<Product>();
 
         public MainWindow()
@@ -56,7 +55,7 @@ namespace Kassa
 
                 ExistingProducts.Add(curProduct);
             }
-            productListBox.ItemsSource = products;
+            productListBox.ItemsSource = ExistingProducts;
             
         }
 
