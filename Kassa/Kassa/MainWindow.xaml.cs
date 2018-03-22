@@ -55,6 +55,8 @@ namespace Kassa
 
                 products.Add(curProduct);
             }
+            productListBox.ItemsSource = products;
+            
         }
 
         
