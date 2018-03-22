@@ -96,8 +96,10 @@ namespace Kassa
             bufferList.Add(newProduct);
 
             productListBox.ItemsSource = bufferList;
-
-            productListBox.SelectedItem = curProductName;
+            productListBox.SelectedItem = newProduct;
+            curProductName.Text = null;
+            curProductPrice.Text = null;
+            curProductQuantity.Text = null;
         }
     }
 }
