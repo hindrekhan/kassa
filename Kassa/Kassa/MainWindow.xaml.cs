@@ -56,6 +56,8 @@ namespace Kassa
 
                 ExistingProducts.Add(curProduct);
             }
+            productListBox.ItemsSource = products;
+            
         }
 
         void CalculateFullPrice()
