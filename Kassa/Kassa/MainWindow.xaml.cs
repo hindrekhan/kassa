@@ -69,20 +69,32 @@ namespace Kassa
 
         private void addProduct_Click(object sender, RoutedEventArgs e)
         {
+            bool exit = false;
+            var a = curProductName.BorderBrush;
+
             if (curProductName.Text == "")
             {
-                return;
+                curProductName.BorderBrush = System.Windows.Media.Brushes.Red;
+
+                exit = true;
             }
 
             if (curProductPrice.Text == "")
             {
-                return;
+                curProductPrice.BorderBrush = System.Windows.Media.Brushes.Red;
+
+                exit = true;
             }
 
             if (curProductQuantity.Text == "")
             {
-                return;
+                curProductQuantity.BorderBrush = System.Windows.Media.Brushes.Red;
+
+                exit = true;
             }
+
+            if (exit)
+                return;
 
             Product newProduct = new Product();
 
@@ -100,6 +112,21 @@ namespace Kassa
             curProductName.Text = null;
             curProductPrice.Text = null;
             curProductQuantity.Text = null;
+        }
+
+        private void curProductName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            curProductName.BorderBrush = System.Windows.Media.Brushes.SlateGray;
+        }
+
+        private void curProductPrice_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            curProductPrice.BorderBrush = System.Windows.Media.Brushes.SlateGray;
+        }
+
+        private void curProductQuantity_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            curProductQuantity.BorderBrush = System.Windows.Media.Brushes.SlateGray;
         }
     }
 }
