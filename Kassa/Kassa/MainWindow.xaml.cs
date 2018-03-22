@@ -30,6 +30,7 @@ namespace Kassa
         public MainWindow()
         {
             InitializeComponent();
+            InitializeProducts();
         }
 
         void InitializeProducts()
@@ -55,5 +56,7 @@ namespace Kassa
                 products.Add(curProduct);
             }
         }
+
+        
     }
 }
