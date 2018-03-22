@@ -30,10 +30,10 @@ namespace Kassa
         public MainWindow()
         {
             InitializeComponent();
-            InitializeProducts();
+            InitializeExistingProducts();
         }
 
-        void InitializeProducts()
+        void InitializeExistingProducts()
         {
             Product curProduct;
             ExistingProducts = new List<Product>();
