@@ -65,5 +65,10 @@ namespace Kassa
             foreach (Product curProduct in SelectedProducts)
                 curPrice += curProduct.Quantity * curProduct.Price;
         }
+
+        private void addProduct_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
