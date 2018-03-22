@@ -129,5 +129,9 @@ namespace Kassa
             curProductQuantity.BorderBrush = Brushes.SlateGray;
         }
 
+        private void addToBasket_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
