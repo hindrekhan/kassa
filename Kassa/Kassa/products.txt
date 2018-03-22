@@ -1,2 +1,5 @@
 #NAME PRICE QUANTITY
 O.J 35,2 1
+Soda 1,2 1
+Flour 38,3 35
+

@@ -25,7 +25,7 @@ namespace Kassa
     //Müüja saab lisada olemasolevaid tooteid ostukorvi mille alusel arvutatakse välja summa mida klient maksma peab.
     public partial class MainWindow : Window
     {
-        List<Product> products;
+        List<Product> ExistingProducts;
 
         public MainWindow()
         {
@@ -36,7 +36,7 @@ namespace Kassa
         void InitializeProducts()
         {
             Product curProduct;
-            products = new List<Product>();
+            ExistingProducts = new List<Product>();
 
             string[] allLines = System.IO.File.ReadAllLines("../../products.txt");
 
@@ -53,10 +53,13 @@ namespace Kassa
                 curProduct.Price = Convert.ToDecimal(splitLine[1]);
                 curProduct.Quantity = Convert.ToInt32(splitLine[2]);
 
-                products.Add(curProduct);
+                ExistingProducts.Add(curProduct);
             }
         }
 
-        
+        void CalculateFullPrice()
+        {
+
+        }
     }
 }
