@@ -130,6 +130,7 @@ namespace Kassa
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var Selected = (TextBlock)productListBox.SelectedItem;
@@ -148,5 +149,11 @@ namespace Kassa
         }
 =======
 >>>>>>> c67d473bcf79264082af91db7bc1186e0889f28b
+=======
+        private void addToBasket_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+>>>>>>> c63e56c9b05c5aa07a0beeda57e43a4adf4baa4d
     }
 }
