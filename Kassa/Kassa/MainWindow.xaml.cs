@@ -90,15 +90,15 @@ namespace Kassa
             newProduct.Price = Convert.ToDecimal(curProductPrice.Text);
             newProduct.Quantity = Convert.ToInt32(curProductQuantity.Text);
 
-            
-
             List<Product> bufferList = new List<Product>(ExistingProducts);
 
             ExistingProducts.Add(newProduct);
             bufferList.Add(newProduct);
 
             productListBox.ItemsSource = bufferList;
-
+            curProductName.Text = null;
+            curProductPrice.Text = null;
+            curProductQuantity.Text = null;
         }
     }
 }
