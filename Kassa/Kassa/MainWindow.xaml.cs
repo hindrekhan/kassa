@@ -74,21 +74,21 @@ namespace Kassa
 
             if (curProductName.Text == "")
             {
-                curProductName.BorderBrush = System.Windows.Media.Brushes.Red;
+                curProductName.BorderBrush = Brushes.Red;
 
                 exit = true;
             }
 
             if (curProductPrice.Text == "")
             {
-                curProductPrice.BorderBrush = System.Windows.Media.Brushes.Red;
+                curProductPrice.BorderBrush = Brushes.Red;
 
                 exit = true;
             }
 
             if (curProductQuantity.Text == "")
             {
-                curProductQuantity.BorderBrush = System.Windows.Media.Brushes.Red;
+                curProductQuantity.BorderBrush = Brushes.Red;
 
                 exit = true;
             }
@@ -116,19 +116,20 @@ namespace Kassa
 
         private void curProductName_TextChanged(object sender, TextChangedEventArgs e)
         {
-            curProductName.BorderBrush = System.Windows.Media.Brushes.SlateGray;
+            curProductName.BorderBrush = Brushes.SlateGray;
         }
 
         private void curProductPrice_TextChanged(object sender, TextChangedEventArgs e)
         {
-            curProductPrice.BorderBrush = System.Windows.Media.Brushes.SlateGray;
+            curProductPrice.BorderBrush = Brushes.SlateGray;
         }
 
         private void curProductQuantity_TextChanged(object sender, TextChangedEventArgs e)
         {
-            curProductQuantity.BorderBrush = System.Windows.Media.Brushes.SlateGray;
+            curProductQuantity.BorderBrush = Brushes.SlateGray;
         }
 
+<<<<<<< HEAD
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var Selected = (TextBlock)productListBox.SelectedItem;
@@ -145,5 +146,7 @@ namespace Kassa
 
             BasketItems.ItemsSource = bufferList;
         }
+=======
+>>>>>>> c67d473bcf79264082af91db7bc1186e0889f28b
     }
 }
