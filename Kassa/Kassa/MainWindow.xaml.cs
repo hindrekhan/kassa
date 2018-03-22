@@ -69,7 +69,28 @@ namespace Kassa
 
         private void addProduct_Click(object sender, RoutedEventArgs e)
         {
+            if (curProductName.Text == "")
+            {
+                return;
+            }
 
+            if (curProductPrice.Text == "")
+            {
+                return;
+            }
+
+            if (curProductQuantity.Text == "")
+            {
+                return;
+            }
+
+            Product newProduct = new Product();
+
+            newProduct.Name = curProductName.Text;
+            newProduct.Price = Convert.ToDecimal(curProductPrice.Text);
+            newProduct.Quantity = Convert.ToInt32(curProductQuantity.Text);
+
+            ExistingProducts.Add(newProduct);
         }
     }
 }
