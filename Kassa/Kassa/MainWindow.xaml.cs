@@ -51,7 +51,7 @@ namespace Kassa
 
                 curProduct.Name = splitLine[0];
                 curProduct.Price = Convert.ToDecimal(splitLine[1]);
-                curProduct.Quantity = Convert.ToInt32(splitLine[2]);
+                curProduct.Quantity = 0;
 
                 ExistingProducts.Add(curProduct);
             }
@@ -90,8 +90,6 @@ namespace Kassa
             newProduct.Price = Convert.ToDecimal(curProductPrice.Text);
             newProduct.Quantity = Convert.ToInt32(curProductQuantity.Text);
 
-            
-
             List<Product> bufferList = new List<Product>(ExistingProducts);
 
             ExistingProducts.Add(newProduct);
@@ -99,6 +97,7 @@ namespace Kassa
 
             productListBox.ItemsSource = bufferList;
 
+            productListBox.SelectedItem = curProductName;
         }
     }
 }

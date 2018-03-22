@@ -14,11 +14,9 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="80"/>
                             <ColumnDefinition Width="25"/>
-                            <ColumnDefinition Width="25"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Text="{Binding Name}"/>
                         <TextBlock Grid.Column="1" Text="{Binding Price}"/>
-                        <TextBlock Grid.Column="2" Text="{Binding Quantity}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -31,7 +29,6 @@
         <Label Content="Quantity:" HorizontalAlignment="Left" Margin="295,42,0,0" VerticalAlignment="Top" Height="23"/>
         <Button Name="addProduct" Content="Add Product" HorizontalAlignment="Left" Margin="402,14,0,0" VerticalAlignment="Top" Width="75" Click="addProduct_Click"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
-        <Label Content="Quantity" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="90,0,0,0" VerticalAlignment="Top" Height="24"/>
     </Grid>
 </Window>
