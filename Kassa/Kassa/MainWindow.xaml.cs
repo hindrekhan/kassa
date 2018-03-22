@@ -39,7 +39,7 @@ namespace Kassa
             Product curProduct;
 
             string[] allLines = System.IO.File.ReadAllLines("../../products.txt");
-
+            
             foreach (string curLine in allLines)
             {
                 if (curLine.Contains('#'))
@@ -55,6 +55,7 @@ namespace Kassa
 
                 ExistingProducts.Add(curProduct);
             }
+
             productListBox.ItemsSource = ExistingProducts;
         }
 
