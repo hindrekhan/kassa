@@ -128,5 +128,22 @@ namespace Kassa
         {
             curProductQuantity.BorderBrush = System.Windows.Media.Brushes.SlateGray;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var Selected = (TextBlock)productListBox.SelectedItem;
+
+            foreach (var curItem in ExistingProducts)
+            {
+                if (curItem.Name == Selected.Text)
+                {
+                    SelectedProducts.Add(curItem);
+                }
+            }
+
+            var bufferList = new List<Product>(SelectedProducts);
+
+            BasketItems.ItemsSource = bufferList;
+        }
     }
 }
