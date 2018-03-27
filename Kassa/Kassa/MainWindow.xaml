@@ -30,10 +30,8 @@
         <Button Name="addProduct" Content="Add Product" HorizontalAlignment="Left" Margin="402,14,0,0" VerticalAlignment="Top" Width="73" Click="addProduct_Click" Height="23"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="114,0,0,0" VerticalAlignment="Top" Height="24"/>
-        <Button Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="Button_Click"/>
-        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145"/>
         <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
-        <ListBox HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
+        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
