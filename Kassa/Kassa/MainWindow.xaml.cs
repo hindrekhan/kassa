@@ -141,6 +141,9 @@ namespace Kassa
             var selectedIndex = productListBox.SelectedIndex;
             var newProduct = ExistingProducts.ElementAt(selectedIndex);
 
+            if (SelectedProducts.Contains(newProduct))
+                return;
+
             SelectedProducts.Add(newProduct);
 
             var bufferList = new List<Product>(SelectedProducts);
