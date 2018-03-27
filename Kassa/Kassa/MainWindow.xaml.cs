@@ -145,6 +145,7 @@ namespace Kassa
 
             else
             {
+                newProduct.Quantity = 1;
                 SelectedProducts.Add(newProduct);
             }
 
@@ -154,7 +155,7 @@ namespace Kassa
             decimal TotalPrice = 0;
             for (int i = 0; i < bufferList.Count; i++)
             {
-                TotalPrice += Convert.ToDecimal(bufferList[i].Price);
+                TotalPrice += Convert.ToDecimal(bufferList[i].Price * bufferList[i].Quantity);
             }
 
             lblTotalPrice.Content = TotalPrice;
