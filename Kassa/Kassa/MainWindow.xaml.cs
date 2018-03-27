@@ -165,5 +165,6 @@ namespace Kassa
         {
             addQuantity.Text = null;
         }
+
     }
 }
