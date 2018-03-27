@@ -29,12 +29,8 @@
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
-<<<<<<< HEAD
         <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="170">
-=======
-        <Button Name="removeFromBasket" Content="Remove from basket" HorizontalAlignment="Left" Margin="189,194,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="removeFromBasket_Click"/>
-        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
->>>>>>> c5ef658be8c800d82666918c4163a7d1a612ce89
+            <Button Name="removeFromBasket" Content="Remove from basket" HorizontalAlignment="Left" Margin="189,194,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="removeFromBasket_Click"/>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
@@ -48,18 +44,13 @@
                         <TextBlock Grid.Column="2" Text="{Binding Quantity}"/>
                     </Grid>
                 </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+                </ListBox.ItemTemplate>
+            </ListBox>
         <Label Content="Basket items" HorizontalAlignment="Center" Margin="330,73,110,0" VerticalAlignment="Top" Width="79"/>
         <Label Name="lblTotalPriceText" Content="PRICE:" HorizontalAlignment="Left" Margin="203,272,0,0" VerticalAlignment="Top"/>
-<<<<<<< HEAD
         <Label Name="lblTotalPrice" Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
         <TextBox Name="addQuantity" HorizontalAlignment="Left" Height="26" Margin="277,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="48" GotFocus="addQuantityFocus"/>
-=======
-        <Label Name="lblTotalPrice" Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
-        <TextBox Name="addQuantity" HorizontalAlignment="Left" Height="26" Margin="277,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" GotFocus="addQuantityFocus"/>
         <TextBox Name="removeQuantity" HorizontalAlignment="Left" Height="26" Margin="277,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" GotFocus="removeQuantityFocus"/>
->>>>>>> c5ef658be8c800d82666918c4163a7d1a612ce89
         <Label Content="Quantity to add:" HorizontalAlignment="Left" Margin="184,147,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Qt to Remove:" HorizontalAlignment="Left" Margin="189,241,0,0" VerticalAlignment="Top" Width="92"/>
         <Label Content="Qt" HorizontalAlignment="Left" Margin="438,73,0,0" VerticalAlignment="Top"/>
