@@ -32,6 +32,7 @@ namespace Kassa
         {
             InitializeComponent();
             InitializeExistingProducts();
+            addQuantity.Text = "1";
         }
 
         void InitializeExistingProducts()
@@ -101,12 +102,15 @@ namespace Kassa
             newProduct.Name = curProductName.Text;
             newProduct.Price = Convert.ToDecimal(curProductPrice.Text);
             newProduct.Quantity = Convert.ToInt32(curProductQuantity.Text);
-
             List<Product> bufferList = new List<Product>(ExistingProducts);
 
             ExistingProducts.Add(newProduct);
             bufferList.Add(newProduct);
-
+            int x = newProduct.Quantity;
+            for (x = newProduct.Quantity; x == newProduct.Quantity; x++)
+            {
+                bufferList.Add(newProduct);
+            }
             productListBox.ItemsSource = bufferList;
             productListBox.SelectedItem = newProduct;
             curProductName.Text = null;
@@ -149,6 +153,11 @@ namespace Kassa
         private void addToBasket_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void addQuantityFocus(object sender, RoutedEventArgs e)
+        {
+            addQuantity.Text = null;
         }
 
     }
