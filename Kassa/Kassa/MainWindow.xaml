@@ -29,8 +29,8 @@
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
+        <Button Name="removeFromBasket" Content="Remove from basket" HorizontalAlignment="Left" Margin="189,194,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="removeFromBasket_Click"/>
         <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="170">
-            <Button Name="removeFromBasket" Content="Remove from basket" HorizontalAlignment="Left" Margin="189,194,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="removeFromBasket_Click"/>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
