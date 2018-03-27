@@ -31,16 +31,18 @@
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="114,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
-        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
+        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145" SelectionChanged="BasketItems_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="80"/>
-                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="24"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Text="{Binding Name}"/>
                         <TextBlock Grid.Column="1" Text="{Binding Price}"/>
+                        <TextBlock Grid.Column="2" Text="{Binding Quantity}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
