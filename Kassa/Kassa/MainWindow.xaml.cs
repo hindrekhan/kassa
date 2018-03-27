@@ -146,6 +146,12 @@ namespace Kassa
             var bufferList = new List<Product>(SelectedProducts);
 
             BasketItems.ItemsSource = bufferList;
+            decimal TotalPrice = 0;
+            for (int i = 0; i < bufferList.Count; i++)
+            {
+                TotalPrice += Convert.ToDecimal(bufferList[i].Price);
+            }
+            lblTotalPrice.Content = TotalPrice;
         }
 
         private void addQuantityFocus(object sender, RoutedEventArgs e)
