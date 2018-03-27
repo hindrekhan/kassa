@@ -106,11 +106,6 @@ namespace Kassa
 
             ExistingProducts.Add(newProduct);
             bufferList.Add(newProduct);
-            int x = newProduct.Quantity;
-            for (x = newProduct.Quantity; x == newProduct.Quantity; x++)
-            {
-                bufferList.Add(newProduct);
-            }
             productListBox.ItemsSource = bufferList;
             productListBox.SelectedItem = newProduct;
             curProductName.Text = null;
