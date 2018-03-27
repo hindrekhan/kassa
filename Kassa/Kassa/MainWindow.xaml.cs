@@ -145,7 +145,7 @@ namespace Kassa
 
             else
             {
-                newProduct.Quantity = 1;
+                newProduct.Quantity = Int32.Parse(addQuantity.Text);
                 SelectedProducts.Add(newProduct);
             }
 
