@@ -33,6 +33,7 @@ namespace Kassa
             InitializeComponent();
             InitializeExistingProducts();
             addQuantity.Text = "1";
+            removeQuantity.Text = "1";
         }
 
         void InitializeExistingProducts()
@@ -148,9 +149,39 @@ namespace Kassa
             lblTotalPrice.Content = TotalPrice;
         }
 
+        private void removeFromBasket_Click(object sender, RoutedEventArgs e)
+        {
+
+            var selectedIndex = BasketItems.SelectedIndex;
+
+            if (selectedIndex == -1)
+                return;
+
+            var newProduct = SelectedProducts.ElementAt(selectedIndex);
+
+            if (SelectedProducts[selectedIndex].Quantity <= Int32.Parse(removeQuantity.Text))
+            {
+                SelectedProducts.RemoveAt(selectedIndex);
+            }
+
+            else
+            {
+                SelectedProducts[selectedIndex].Quantity -= Int32.Parse(removeQuantity.Text);
+            }
+
+            List<Product> bufferList = new List<Product>(SelectedProducts);
+            BasketItems.ItemsSource = bufferList;
+
+        }
+
         private void addQuantityFocus(object sender, RoutedEventArgs e)
         {
             addQuantity.Text = null;
+        }
+
+        private void removeQuantityFocus(object sender, RoutedEventArgs e)
+        {
+            removeQuantity.Text = null;
         }
 
         private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
