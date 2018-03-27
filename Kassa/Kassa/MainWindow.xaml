@@ -46,8 +46,8 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Label Content="Basket items" HorizontalAlignment="Center" Margin="358,73,82,0" VerticalAlignment="Top" Width="79"/>
-        <Label Content="PRICE:" HorizontalAlignment="Left" Margin="203,272,0,0" VerticalAlignment="Top"/>
-        <Label Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <Label Name="lblTotalPriceText" Content="PRICE:" HorizontalAlignment="Left" Margin="203,272,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblTotalPrice" Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
         <TextBox Name="addQuantity" HorizontalAlignment="Left" Height="26" Margin="277,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" GotFocus="addQuantityFocus"/>
         <Label Content="Quantity to add:" HorizontalAlignment="Left" Margin="184,147,0,0" VerticalAlignment="Top" Width="98"/>
     </Grid>
