@@ -111,6 +111,7 @@ namespace Kassa
             curProductName.Text = null;
             curProductPrice.Text = null;
             curProductQuantity.Text = null;
+            productListBox.ScrollIntoView(newProduct);
         }
 
         private void curProductName_TextChanged(object sender, TextChangedEventArgs e)
@@ -166,5 +167,9 @@ namespace Kassa
             addQuantity.Text = null;
         }
 
+        private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

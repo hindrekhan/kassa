@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize">
     <Grid>
-        <ListBox Name="productListBox" Margin="10,24,335,10">
+        <ListBox Name="productListBox" Margin="10,24,335,10" SelectionChanged="productListBox_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
