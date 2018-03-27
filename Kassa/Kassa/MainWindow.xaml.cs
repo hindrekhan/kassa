@@ -87,13 +87,6 @@ namespace Kassa
                 exit = true;
             }
 
-            if (curProductQuantity.Text == "")
-            {
-                curProductQuantity.BorderBrush = Brushes.Red;
-
-                exit = true;
-            }
-
             if (exit)
                 return;
 
@@ -101,7 +94,6 @@ namespace Kassa
 
             newProduct.Name = curProductName.Text;
             newProduct.Price = Convert.ToDecimal(curProductPrice.Text);
-            newProduct.Quantity = Convert.ToInt32(curProductQuantity.Text);
             List<Product> bufferList = new List<Product>(ExistingProducts);
 
             ExistingProducts.Add(newProduct);
@@ -110,7 +102,6 @@ namespace Kassa
             productListBox.SelectedItem = newProduct;
             curProductName.Text = null;
             curProductPrice.Text = null;
-            curProductQuantity.Text = null;
             productListBox.ScrollIntoView(newProduct);
         }
 
@@ -122,11 +113,6 @@ namespace Kassa
         private void curProductPrice_TextChanged(object sender, TextChangedEventArgs e)
         {
             curProductPrice.BorderBrush = Brushes.SlateGray;
-        }
-
-        private void curProductQuantity_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            curProductQuantity.BorderBrush = Brushes.SlateGray;
         }
 
         private void addToBasket_Click(object sender, RoutedEventArgs e)

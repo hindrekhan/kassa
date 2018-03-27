@@ -23,10 +23,8 @@
         </ListBox>
         <TextBox Name="curProductName" HorizontalAlignment="Left" Height="23" Margin="236,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="curProductName_TextChanged"/>
         <TextBox Name="curProductPrice" HorizontalAlignment="Left" Height="23" Margin="236,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" TextChanged="curProductPrice_TextChanged"/>
-        <TextBox Name="curProductQuantity" HorizontalAlignment="Left" Height="23" Margin="358,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="35" TextChanged="curProductQuantity_TextChanged"/>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="187,14,0,0" VerticalAlignment="Top" Height="23"/>
         <Label Content="Price:" HorizontalAlignment="Left" Margin="187,42,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label Content="Quantity:" HorizontalAlignment="Left" Margin="295,42,0,0" VerticalAlignment="Top" Height="23"/>
         <Button Name="addProduct" Content="Add Product" HorizontalAlignment="Left" Margin="402,14,0,0" VerticalAlignment="Top" Width="73" Click="addProduct_Click" Height="23"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Height="24"/>
