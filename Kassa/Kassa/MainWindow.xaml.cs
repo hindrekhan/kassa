@@ -129,9 +129,31 @@ namespace Kassa
             curProductQuantity.BorderBrush = Brushes.SlateGray;
         }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var Selected = (TextBlock)productListBox.SelectedItem;
+
+            foreach (var curItem in ExistingProducts)
+            {
+                if (curItem.Name == Selected.Text)
+                {
+                    SelectedProducts.Add(curItem);
+                }
+            }
+
+            var bufferList = new List<Product>(SelectedProducts);
+
+            BasketItems.ItemsSource = bufferList;
+        }
+=======
+>>>>>>> c67d473bcf79264082af91db7bc1186e0889f28b
+=======
         private void addToBasket_Click(object sender, RoutedEventArgs e)
         {
 
         }
+>>>>>>> c63e56c9b05c5aa07a0beeda57e43a4adf4baa4d
     }
 }
