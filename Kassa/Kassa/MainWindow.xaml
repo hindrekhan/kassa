@@ -61,7 +61,7 @@
         <TextBox Name="removeQuantity" HorizontalAlignment="Left" Height="26" Margin="277,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" GotFocus="removeQuantityFocus"/>
 >>>>>>> c5ef658be8c800d82666918c4163a7d1a612ce89
         <Label Content="Quantity to add:" HorizontalAlignment="Left" Margin="184,147,0,0" VerticalAlignment="Top" Width="98"/>
-        <Label Content="Qt to Remove:" HorizontalAlignment="Left" Margin="189,241,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Qt to Remove:" HorizontalAlignment="Left" Margin="189,241,0,0" VerticalAlignment="Top" Width="92"/>
         <Label Content="Qt" HorizontalAlignment="Left" Margin="438,73,0,0" VerticalAlignment="Top"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="402,73,0,0" VerticalAlignment="Top"/>
         <Label Content="NB! Toote kogus on lõpmatu!" HorizontalAlignment="Left" Margin="0,291,0,0" VerticalAlignment="Top"/>
