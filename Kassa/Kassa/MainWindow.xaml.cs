@@ -142,9 +142,16 @@ namespace Kassa
             var newProduct = ExistingProducts.ElementAt(selectedIndex);
 
             if (SelectedProducts.Contains(newProduct))
-                return;
+            {
+                var indOf = SelectedProducts.IndexOf(newProduct);
+                newProduct.Quantity += Int32.Parse(addQuantity.Text);
+                SelectedProducts[indOf] = newProduct;
+            }
 
-            SelectedProducts.Add(newProduct);
+            else
+            {
+                SelectedProducts.Add(newProduct);
+            }
 
             var bufferList = new List<Product>(SelectedProducts);
 
@@ -154,6 +161,7 @@ namespace Kassa
             {
                 TotalPrice += Convert.ToDecimal(bufferList[i].Price);
             }
+
             lblTotalPrice.Content = TotalPrice;
         }
 
