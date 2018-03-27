@@ -29,7 +29,7 @@
         <Label Content="Quantity:" HorizontalAlignment="Left" Margin="295,42,0,0" VerticalAlignment="Top" Height="23"/>
         <Button Name="addProduct" Content="Add Product" HorizontalAlignment="Left" Margin="402,14,0,0" VerticalAlignment="Top" Width="73" Click="addProduct_Click" Height="23"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
-        <Label Content="Price" HorizontalAlignment="Left" Margin="114,0,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
         <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
             <ListBox.ItemTemplate>
