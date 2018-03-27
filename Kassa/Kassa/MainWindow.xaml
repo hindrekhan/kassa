@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kassa"
         mc:Ignorable="d"
-        Title="Kassa by hindrekhan and jaanjah" Height="350" Width="525" ResizeMode="NoResize">
+        Title="Kassa by hindrekhan and jaanjah" Height="356" Width="525" ResizeMode="NoResize">
     <Grid>
-        <ListBox Name="productListBox" Margin="10,24,335,10" SelectionChanged="productListBox_SelectionChanged">
+        <ListBox Name="productListBox" Margin="10,24,335,24" SelectionChanged="productListBox_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
@@ -29,14 +29,14 @@
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Height="24"/>
         <Button Name="addToBasket" Content="Add to basket" HorizontalAlignment="Left" Margin="189,111,0,0" VerticalAlignment="Top" Width="83" Height="36" Click="addToBasket_Click"/>
-        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="145">
+        <ListBox Name="BasketItems" HorizontalAlignment="Left" Height="199" Margin="330,99,0,0" VerticalAlignment="Top" Width="170">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="80"/>
                             <ColumnDefinition Width="24"/>
-                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="50"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Text="{Binding Name}"/>
                         <TextBlock Grid.Column="1" Text="{Binding Price}"/>
@@ -47,10 +47,11 @@
         </ListBox>
         <Label Content="Basket items" HorizontalAlignment="Center" Margin="330,73,110,0" VerticalAlignment="Top" Width="79"/>
         <Label Name="lblTotalPriceText" Content="PRICE:" HorizontalAlignment="Left" Margin="203,272,0,0" VerticalAlignment="Top"/>
-        <Label Name="lblTotalPrice" Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
-        <TextBox Name="addQuantity" HorizontalAlignment="Left" Height="26" Margin="277,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" GotFocus="addQuantityFocus"/>
+        <Label Name="lblTotalPrice" Content="{Binding TotalPrice}" HorizontalAlignment="Left" Margin="251,272,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+        <TextBox Name="addQuantity" HorizontalAlignment="Left" Height="26" Margin="277,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="48" GotFocus="addQuantityFocus"/>
         <Label Content="Quantity to add:" HorizontalAlignment="Left" Margin="184,147,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Qt" HorizontalAlignment="Left" Margin="438,73,0,0" VerticalAlignment="Top"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="402,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="NB! Toote kogus on lõpmatu!" HorizontalAlignment="Left" Margin="0,291,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
