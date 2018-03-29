@@ -104,6 +104,7 @@ namespace Kassa
             curProductName.Text = null;
             curProductPrice.Text = null;
             productListBox.ScrollIntoView(newProduct);
+            SaveProducts();
         }
 
         private void curProductName_TextChanged(object sender, TextChangedEventArgs e)
@@ -187,6 +188,18 @@ namespace Kassa
         private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        void SaveProducts()
+        {
+            string[] newData = new string[ExistingProducts.Count];
+
+            for (int i = 0; i < ExistingProducts.Count; i++)
+            {
+                newData[i] = "\n" + ExistingProducts[i].Name + " " + ExistingProducts[i].Price;
+            }
+
+            System.IO.File.WriteAllLines("../../products.txt", newData);
         }
     }
 }
