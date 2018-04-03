@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-﻿
-=======
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -199,4 +196,3 @@ namespace Kassa
         }
     }
 }
->>>>>>> 364ff3783cd9ede36133a7430c10378a0b027596
