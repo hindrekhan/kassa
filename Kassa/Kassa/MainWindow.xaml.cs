@@ -134,6 +134,11 @@ namespace Kassa
             var bufferList = new List<Product>(SelectedProducts);
 
             BasketItems.ItemsSource = bufferList;
+            calculateTotalPrice(bufferList);
+        }
+
+        private void calculateTotalPrice(List<Product> bufferList)
+        {
             decimal TotalPrice = 0;
             for (int i = 0; i < bufferList.Count; i++)
             {
@@ -142,6 +147,8 @@ namespace Kassa
 
             lblTotalPrice.Content = TotalPrice;
         }
+
+
 
         private void removeFromBasket_Click(object sender, RoutedEventArgs e)
         {
@@ -165,7 +172,7 @@ namespace Kassa
 
             List<Product> bufferList = new List<Product>(SelectedProducts);
             BasketItems.ItemsSource = bufferList;
-
+            calculateTotalPrice(bufferList);
         }
 
         private void addQuantityFocus(object sender, RoutedEventArgs e)
