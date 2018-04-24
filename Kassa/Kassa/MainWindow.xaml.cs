@@ -199,7 +199,7 @@ namespace Kassa
                 newData[i] = "\n" + ExistingProducts[i].Name + " " + ExistingProducts[i].Price;
             }
 
-            System.IO.File.WriteAllLines("../../products.txt", newData);
+            File.WriteAllLines("../../products.txt", newData);
         }
     }
 }
