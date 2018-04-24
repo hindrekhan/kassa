@@ -148,8 +148,6 @@ namespace Kassa
             lblTotalPrice.Content = TotalPrice;
         }
 
-
-
         private void removeFromBasket_Click(object sender, RoutedEventArgs e)
         {
 
