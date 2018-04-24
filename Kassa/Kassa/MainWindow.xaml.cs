@@ -196,7 +196,7 @@ namespace Kassa
 
             for (int i = 0; i < ExistingProducts.Count; i++)
             {
-                newData[i] = "\n" + ExistingProducts[i].Name + " " + ExistingProducts[i].Price;
+                newData[i] = ExistingProducts[i].Name + " " + ExistingProducts[i].Price;
             }
 
             System.IO.File.WriteAllLines("../../products.txt", newData);
