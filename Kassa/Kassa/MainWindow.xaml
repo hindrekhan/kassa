@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Kassa by hindrekhan and jaanjah" Height="356" Width="525" ResizeMode="NoResize">
     <Grid>
-        <ListBox Name="productListBox" Margin="10,24,335,24" SelectionChanged="productListBox_SelectionChanged">
+        <ListBox Name="productListBox" Margin="10,24,335,24">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">

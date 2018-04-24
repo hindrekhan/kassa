@@ -148,11 +148,8 @@ namespace Kassa
             lblTotalPrice.Content = TotalPrice;
         }
 
-
-
         private void removeFromBasket_Click(object sender, RoutedEventArgs e)
         {
-
             var selectedIndex = BasketItems.SelectedIndex;
 
             if (selectedIndex == -1)
@@ -185,18 +182,13 @@ namespace Kassa
             removeQuantity.Text = null;
         }
 
-        private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         void SaveProducts()
         {
             string[] newData = new string[ExistingProducts.Count];
 
             for (int i = 0; i < ExistingProducts.Count; i++)
             {
-                newData[i] = "\n" + ExistingProducts[i].Name + " " + ExistingProducts[i].Price;
+                newData[i] = ExistingProducts[i].Name + " " + ExistingProducts[i].Price;
             }
 
             File.WriteAllLines("../../products.txt", newData);
