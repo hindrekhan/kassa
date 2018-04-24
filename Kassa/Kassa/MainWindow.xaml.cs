@@ -150,7 +150,6 @@ namespace Kassa
 
         private void removeFromBasket_Click(object sender, RoutedEventArgs e)
         {
-
             var selectedIndex = BasketItems.SelectedIndex;
 
             if (selectedIndex == -1)
@@ -181,11 +180,6 @@ namespace Kassa
         private void removeQuantityFocus(object sender, RoutedEventArgs e)
         {
             removeQuantity.Text = null;
-        }
-
-        private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
         void SaveProducts()
